@@ -16,7 +16,7 @@ module.exports = (data) => {
         contactnumber: Joi.string().min(10).max(10),    
         formDate: Joi.string(),    
         image: Joi.string(),    
-        cityId: Joi.number().integer().required(), 
+        cityId: Joi.string(), 
 
     })
   
