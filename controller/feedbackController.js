@@ -39,5 +39,13 @@ exports.add = async (req, res) => {
 }
 
 exports.get = async (req, res) => {
-    res.json({msg:"hi"})
+    feedbackModel.find((err, docs) => {
+        if (!err) {
+            res.render("list", {
+                data: docs
+            });
+        } else {
+            console.log('Failed to retrieve the Course List: ' + err);
+        }
+    });
 }
