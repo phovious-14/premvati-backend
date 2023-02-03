@@ -12,7 +12,9 @@ exports.add = async (req, res) => {
         cleanliness,
         likedproduct,
         suggestion,
-        contactnumber
+        contactnumber,
+        cityId,
+        image
     } = req.body
     var userDetails = new feedbackModel({
         age,
@@ -26,7 +28,8 @@ exports.add = async (req, res) => {
         likedproduct,
         suggestion,
         contactnumber,
-        cityId
+        cityId,
+        image
     });
     userDetails.save((err, doc) => {
         if (!err) {

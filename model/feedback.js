@@ -21,7 +21,7 @@ const schema = mongoose.Schema({
     //         type: String
     //     }
     // },
-    // image: String,
+    image: String,
     cityId: String
 })
 
