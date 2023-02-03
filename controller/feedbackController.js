@@ -1,11 +1,11 @@
 const {feedbackModel} = require('../model/feedback')
 const validate = require('../validation')
 exports.add = async (req, res) => {
-    
-    const error = validate(req.body)
-    if (error) {
-        return res.status(400).json({error:error.details[0].message});
-    }
+
+    // const error = validate(req.body)
+    // if (error) {
+    //     return res.status(400).json({error:error.details[0].message});
+    // }
 
     const { 
         age,
