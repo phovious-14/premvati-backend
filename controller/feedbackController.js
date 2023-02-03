@@ -14,6 +14,7 @@ exports.add = async (req, res) => {
         suggestion,
         contactnumber,
         cityId,
+        formDate,
         image
     } = req.body
     var userDetails = new feedbackModel({
@@ -29,6 +30,7 @@ exports.add = async (req, res) => {
         suggestion,
         contactnumber,
         cityId,
+        formDate,
         image
     });
     userDetails.save((err, doc) => {

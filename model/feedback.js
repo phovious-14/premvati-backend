@@ -25,6 +25,7 @@ const schema = mongoose.Schema({
     likedproduct: String,
     suggestion: String,
     contactnumber: String,
+    formDate: Date,
     // image:{
     //     avatar: {
     //         type: String
