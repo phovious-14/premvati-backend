@@ -11,12 +11,12 @@ module.exports = (data) => {
         servingmethod: Joi.string().required(),    
         staffbehave: Joi.string().required(),
         cleanliness: Joi.string().required(),  
-        likedproduct: Joi.string(),    
-        suggestion: Joi.string(),    
+        likedproduct: Joi.string().min(0),    
+        suggestion: Joi.string().min(0),    
         contactnumber: Joi.string().min(10).max(10),    
-        formDate: Joi.string(),    
-        image: Joi.string(),    
-        cityId: Joi.string(), 
+        formDate: Joi.string().min(0),    
+        image: Joi.string().min(0),    
+        cityId: Joi.string().min(0), 
 
     })
   
