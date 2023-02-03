@@ -2,12 +2,24 @@ const mongoose = require("mongoose")
 require("dotenv").config()
 
 const schema = mongoose.Schema({
-    age: String,
-    gender: String,
-    order: String,
-    qualityfood: String,
-    tasteoffood: String,
-    servingmethod: String,
+    age: {
+        type:String,require:true
+    },
+    gender:  {
+        type:String,require:true
+    },
+    order:  {
+        type:String,require:true
+    },
+    qualityfood:  {
+        type:String,require:true
+    },
+    tasteoffood:  {
+        type:String,require:true
+    },
+    servingmethod:  {
+        type:String,require:true
+    },
     staffbehave: String,
     cleanliness: String,
     likedproduct: String,

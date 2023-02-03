@@ -5,12 +5,10 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
 const connectDB = async () => {
     
     try{
-        mongoose.set("strictQuery", false);
         mongoose.connect(process.env.MONGO_URL,{
             useNewUrlParser: true,
             useUnifiedTopology: true,
-        })
-        console.log("DB connected");
+        }).then((data) => console.log(data))
     }
     catch(err){
         console.log(err);
