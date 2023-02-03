@@ -13,7 +13,7 @@ module.exports = (data) => {
         cleanliness: Joi.string().required(),  
         likedproduct: Joi.string().min(0),    
         suggestion: Joi.string().min(0),    
-        contactnumber: Joi.string().min(10).max(10),    
+        contactnumber: Joi.string().min(0),    
         formDate: Joi.string().min(0),    
         image: Joi.string().min(0),    
         cityId: Joi.string().min(0), 
