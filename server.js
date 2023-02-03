@@ -4,6 +4,7 @@ const port = process.env.PORT || 5000
 const conn = require("./database/conn")
 const cookieParser = require('cookie-parser')
 const feedbackRouter = require('./router/feedbackRoutes.js')
+const cityRouter = require('./router/cities')
 require("dotenv").config()
 
 //create a mongoDB connection
@@ -34,6 +35,8 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', feedbackRouter)
+
+app.use('/', cityRouter)
 
 app.listen(port, () => {
     console.log(`Server running at ${port}`);
