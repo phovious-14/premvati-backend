@@ -14,7 +14,7 @@ module.exports = (data) => {
         likedproduct: Joi.string(),    
         suggestion: Joi.string(),    
         contactnumber: Joi.string().min(10).max(10),    
-        formDate: Joi.date(),    
+        formDate: Joi.string(),    
         image: Joi.string(),    
         cityId: Joi.number().integer().required(), 
 
